@@ -75,11 +75,20 @@ body {
   text-decoration: none;
   color: #727274;
 }
+.zelandiya{
+  box-sizing: border-box;
+  background: #253476;
+}
 
 .zelandiya p {
   width: 40%;
   color: #fff;
 }
+.zelandiya  img{
+  padding-bottom: 10px;
+}
+
+
 
 /* ========== Nav end =========== */
 /* ========== Main start =========== */
@@ -93,15 +102,24 @@ body {
     color: #fff;
 }
 .centerword {
+ 
+
     align-items: center;
+    font-family: Zilla Slab;
+    letter-spacing: 4px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400px;
+    
 }
+
 
 
 .centerword h1{
     
     text-align: center;
 }
-.circle{
+.circle1 {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -109,7 +127,33 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
+}
+.circle1 i{
+  padding-right: 4px;
+}
+.circle1:hover{
+  background: #727274;
+  transition: 0.5s;
+}
+.circle2 {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.circle2 i{
+padding-left: 4px;
+}
+.circle2:hover{
+background: #727274;
+transition: 0.5s;
 }
 
 .socialmicons{
@@ -118,11 +162,65 @@ body {
     gap: 30px;
 
     color: #fff;
+    cursor: pointer;
+}
+.facebook{
+  width: 30px;
+  height: 30px;
+  float: left;
+  /* border: 2px black solid; */
+  background: white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.facebook i{
+  padding: 10px;
+  color: black;
+}
+.instagram{
+  width: 30px;
+  height: 30px;
+  float: left;
+  /* border: 2px black solid; */
+  background: white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.instagram i{
+  color: black;
+  padding: 9px;
+}
+.youtube{
+  width: 30px;
+  height: 30px;
+  float: left;
+  /* border: 2px black solid; */
+  background: white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.youtube i{
+  color: black;
+  padding: 8px;
+}
+.facebook:hover{
+  background: #41b173;
+  transition: 0.5s;
+}
+.instagram:hover{
+  background: #41b173;
+  transition: 0.5s;
+}
+.youtube:hover{
+  background: #41b173;
+  transition: 0.5s;
 }
 
 
 
+   /* ========== Main end =========== */
 
+   /* ==========center start =========== */
 
 .middle{
     width: 100%;
@@ -131,8 +229,21 @@ body {
     background: #ffff;
     position: relative;
     margin-top: 20px;
+   
     
- }     
+ }  
+  .border{
+  width: 630px;
+  height: 430px;
+  float: left;
+  /* border: 5px   solid #E5E5E5; */
+  border-bottom: 3px   solid #E5E5E5;
+  border-right: 3px   solid #E5E5E5;
+  position: relative;
+  /* background: green; */
+  z-index: 3;
+
+ }   
  
  .information{
     width: 600px;
@@ -143,6 +254,7 @@ body {
     z-index: 2;
     box-sizing: border-box;
     padding: 15px;
+    position: absolute;
    
  }
  .picture{
@@ -153,7 +265,7 @@ body {
     position: absolute;
     z-index: 1;
     left: 400px;
-    top: 200px;
+    top: 100px;
     background-image: url("../image/centerimgpng.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,9 +274,201 @@ body {
     color: #CCCCCC;
     font-size: 20px;
     
+    
  }
  .information h1{
-    padding: 10px;
+    padding-bottom: 10px;
  }
-
+/* ==========center end =========== */
  
+/* .mahsullar{
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.textmah {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  float: left;
+  height: 100px;
+}
+.textmah h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+ 
+
+.textmah .strelkalevo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.textmah .strelkapravo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+} */
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .nav_logo{
+      width: 100%;
+      min-height: 150px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .nav_menu{
+      display: none;
+  }
+  .zelandiya{
+    display: none;
+  }
+  .r_main{
+      width: 100%;
+      min-height: 600px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .centerword{
+      width: 301px;
+      height: 129px;
+      float: left;
+      margin-bottom: 150px;
+      margin-left: 90px;
+  }
+  .centerword h1{
+      font-family: 'Zilla Slab';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 155%;
+      /* or 43px */
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-shadow: 0px 3px 37px rgba(0, 0, 0, 0.25);
+  }
+  .socialmicons{
+      display: none;
+  }
+  .circle1{
+      width: 36px;
+      height: 36px;
+      float: left;
+      position: absolute;
+      z-index: 5;
+      bottom: 60px;
+      left: 140px;
+      
+  }
+  .circle1 i{
+      color: white;
+  }
+  .circle2{
+      width: 36px;
+      height: 36px;
+      float: left;
+      position: absolute;
+      z-index: 5;
+      bottom: 60px;
+      right: 140px;
+  }
+  .circle2  i{
+      color: white;
+  }
+  .circle1 i , .circle2 i:hover{
+      cursor: pointer;
+  }
+  .middle{
+      position: relative;
+      width: 100%;
+      min-height: 800px;
+      float: left;
+  }
+  .border{
+      position: absolute;
+      margin-top: 20px;
+      left: 90px;
+      width: 350px;
+      height: 502px;
+      float: left;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFFFFF;
+      border: none;
+  }
+  .picture{
+      position: absolute;
+      left: 90px;
+      top: -70px;
+      width: 279px;
+height: 215px;
+      /* width: 349px;
+      height: 215px; */
+      z-index: 10;
+      float: left;
+      background-image: url("../image/centerimgpng.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+  }
+  .information{
+    width: 239px;
+height: 512px;
+      /* width: 550px;
+      height: 400px; */
+      float: left;
+      color: #1F1F24;
+      background-color: white;
+      box-shadow: 58px 49px 84px rgb(255, 255, 255);
+      padding-top: 100px;
+  }
+  .infarmation h1{
+      /* padding-bottom: 220px; */
+      font-family: 'Zilla Slab';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #1F1F24;
+      margin-top: 120px;
+      
+      
+
+  }
+  .information span{
+      font-family: 'Zilla Slab';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 160.5%;
+      
+      color: #333333;
+      opacity: 0.5;
+     
+  }
+  
+
+}
